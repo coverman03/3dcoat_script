@@ -1,0 +1,22 @@
+void main(){
+ //Å°view_settings
+ cmd("$GGX");
+ cmd("$VIEW_RELIEF_ONLY");
+ SetBoolField("$BackfaceCulling",true);
+ SetBoolField("$VIEW_TEXTURE_FILTERING",true);
+ SetBoolField("$VIEW_DISP",true);
+ SetBoolField("$VIEW_WIREFRAME",false);
+ SetBoolField("$VIEW_SEAMS",true);
+ SetBoolField("$VIEW_LOWPOLY",true);
+ //Å°geometry_settings
+ SetBoolField("$CastShadows",false);
+ SetBoolField("$Multicore",true);
+ SetBoolField("$IncrementalRender",true);
+ SetBoolField("$UseCUDA",true);
+ SetBoolField("$CudaSmoothBoost",true);
+ SetBoolField("$Highlight",true);
+ SetBoolField("$AccurateSmoothing",true);
+ SetBoolField("$MoveBasedGrowth",true);
+ //Å°camera_settings
+ cmd("$rotate_around_curr_pick_point");
+}

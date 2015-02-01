@@ -1,0 +1,7 @@
+void main(){
+ bool curVolumeMode = IsSurface();
+ if(curVolumeMode == true)
+  SetCurVolumeMode(false,true);
+ else
+  SetCurVolumeMode(true,true);
+}

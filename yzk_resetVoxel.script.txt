@@ -1,0 +1,15 @@
+void main(){
+  Rename();
+  Root();
+}
+
+void Rename(){
+  int substringNum = 10;
+  string CurrentName = GetCurVolume();
+  string NewName = CurrentName.substr(0,substringNum);
+  RenameCurVolume(NewName);
+}
+
+void Root(){
+  cmd("$Root");
+}

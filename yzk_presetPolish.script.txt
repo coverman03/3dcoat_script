@@ -1,0 +1,9 @@
+void main(){
+ SetCurVolumeMode(true,false);
+ cmd("$Rapid2");
+ SetBoolField("$Buildup",true);
+ SetSliderValue("$NrmSampling",0.45);
+ SetSliderValue("$FALLOFF",1.0);
+ SetSliderValue("$PEN_DEPTH",0.5);
+ SetSliderValue("$SMOOTH_DEG",1.0);
+}

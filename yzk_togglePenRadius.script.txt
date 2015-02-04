@@ -1,0 +1,10 @@
+void main(){
+ float high = 10.00;
+ float low = 5.00;
+ float average = (high + low) / 2;
+ float value= GetSliderValue("$PEN_RADIUS");
+ if(value <= average)
+  SetSliderValue("$PEN_RADIUS",high);
+ else
+  SetSliderValue("$PEN_RADIUS",low);
+}

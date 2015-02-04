@@ -1,0 +1,10 @@
+void main(){
+ float high = 1.00;
+ float low = 0.00;
+ float average = (high + low) / 2;
+ float value= GetSliderValue("$FALLOFF");
+ if(value <= average)
+  SetSliderValue("$FALLOFF",high);
+ else
+  SetSliderValue("$FALLOFF",low);
+}

@@ -1,0 +1,7 @@
+void main(){
+ cmd("$[Page4]CutOff");
+ SetBoolField("$ThroughAllVolumes",false);
+ bool curVolumeMode = IsSurface();
+ if(curVolumeMode == true)
+  SetCurVolumeMode(false,false);
+}

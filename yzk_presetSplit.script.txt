@@ -1,0 +1,5 @@
+void main(){
+ cmd("$[Page4]Split");
+ SetBoolField("$ThroughAllVolumes",false);
+ SetSliderValue("$SplitBorderWidth",0.01);
+}

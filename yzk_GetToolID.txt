@@ -1,0 +1,4 @@
+void main(){
+ string ID = GetCurrentToolID();
+ ShowFloatingMessage(ID, 10);
+}

@@ -1,0 +1,5 @@
+void main(){
+	string VoxName = GetCurVolume();
+	cmd("$CloneVoxTree");/*Clone*/
+	RenameCurVolume(VoxName);
+}

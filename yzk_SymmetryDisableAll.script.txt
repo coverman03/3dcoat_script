@@ -1,0 +1,7 @@
+void main(){
+	cmd("$VoxTreeBranch::Root[0]");
+	do{
+		cmd("$SYMMETRY_NONE");/*No Symmetry*/
+	}while(SelectNextVolume(false));
+}
+

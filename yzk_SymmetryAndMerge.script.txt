@@ -1,0 +1,24 @@
+void main(){
+	string baseVolume = GetCurVolume();
+	EnableSymmetry(baseVolume + "_Sym",true);
+	cmd("$CloneSymm");
+	SetCurVolume(baseVolume + "_copy");
+	string cloneVolume = baseVolume + "_Sym";
+	RenameCurVolume(cloneVolume);
+	EnableSymmetry(baseVolume,false);
+	EnableSymmetry(cloneVolume,false);
+	Merge(cloneVolume);
+}
+
+void EnableSymmetry(string volume, bool tmpFlag){
+	SetCurVolume(volume);
+	SetBoolField("$SymmetryParams::EnableSymmetry",tmpFlag);
+	Step(1);
+}
+
+void Merge(string volume){
+	SetCurVolume(volume);
+	cmd("$MergeSubtree");/*Merge Sub-Tree*/
+	cmd("$ToUniformSpace");/*To Uniform Space*/
+	Step(1);
+}

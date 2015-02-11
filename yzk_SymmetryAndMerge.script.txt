@@ -1,4 +1,9 @@
 void main(){
+	InstallToMenu("Symmetry","yzk_SymmetryAndMerge");
+	yzk_SymmetryAndMerge();
+}
+
+void yzk_SymmetryAndMerge(){
 	string baseVolume = GetCurVolume();
 	EnableSymmetry(baseVolume + "_Sym",true);
 	cmd("$CloneSymm");

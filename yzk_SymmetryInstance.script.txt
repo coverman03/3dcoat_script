@@ -1,9 +1,9 @@
 void main(){
-	InstallToMenu("Symmetry","yzk_SymmetryAndMerge");
-	yzk_SymmetryAndMerge();
+	InstallToMenu("Symmetry","yzk_SymmetryInstance");
+	yzk_SymmetryInstance();
 }
 
-void yzk_SymmetryAndMerge(){
+void yzk_SymmetryInstance(){
 	string baseVolume = GetCurVolume();
 	EnableSymmetry(baseVolume + "_Sym",true);
 	cmd("$CloneSymm");
@@ -12,7 +12,6 @@ void yzk_SymmetryAndMerge(){
 	RenameCurVolume(cloneVolume);
 	EnableSymmetry(baseVolume,false);
 	EnableSymmetry(cloneVolume,false);
-	Merge(cloneVolume);
 }
 
 void EnableSymmetry(string volume, bool tmpFlag){
@@ -20,11 +19,3 @@ void EnableSymmetry(string volume, bool tmpFlag){
 	SetBoolField("$SymmetryParams::EnableSymmetry",tmpFlag);
 	Step(1);
 }
-
-void Merge(string volume){
-	SetCurVolume(volume);
-	cmd("$MergeSubtree");/*Merge Sub-Tree*/
-	cmd("$ToUniformSpace");/*To Uniform Space*/
-	Step(1);
-}
-

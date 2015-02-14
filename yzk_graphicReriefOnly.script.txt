@@ -1,0 +1,24 @@
+﻿void main(){
+	InstallToMenu("View","yzk_graphicReriefOnly");
+	//■view_settings
+	cmd("$GGX");
+	cmd("$VIEW_RELIEF_ONLY");
+	cmd("$GradientBackground");
+	SetBoolField("$VIEW_ORTHO",true);
+	SetBoolField("$BackfaceCulling",true);
+	SetBoolField("$VIEW_TEXTURE_FILTERING",true);
+	SetBoolField("$VIEW_DISP",true);
+	SetBoolField("$VIEW_WIREFRAME",false);
+	SetBoolField("$VIEW_SEAMS",true);
+	SetBoolField("$VIEW_LOWPOLY",true);
+	//■geometry_settings
+	SetBoolField("$CastShadows",false);
+	SetBoolField("$Multicore",true);
+	SetBoolField("$IncrementalRender",true);
+	SetBoolField("$UseCUDA",true);
+	SetBoolField("$CudaSmoothBoost",true);
+	SetBoolField("$Highlight",true);
+	SetBoolField("$AccurateSmoothing",true);
+	SetBoolField("$MoveBasedGrowth",true);
+	Step(1);
+}

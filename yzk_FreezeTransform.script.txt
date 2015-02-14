@@ -1,0 +1,12 @@
+void main(){
+	cmd("$[Page4]Transform");
+	cmd("$CubPrim::ToLocalCenter");
+	SetBoolField("$CubPrim::MoveOnlyGizmo",true);
+	SetSliderValue("$CubPrim::%$px20",0.00);
+	SetSliderValue("$CubPrim::%$py21",0.00);
+	SetSliderValue("$CubPrim::%$py22",0.00);
+	cmd("$CubPrim::X");
+	cmd("$ToGlobalSpace");
+	SetBoolField("$CubPrim::MoveOnlyGizmo",false);
+	Step(1);
+}

@@ -1,7 +1,11 @@
 void main(){
+	InstallToMenu("Symmetry","yzk_SymmetryDisableAll");
+	yzk_SymmetryDisableAll();
+}
+
+void yzk_SymmetryDisableAll(){
 	cmd("$VoxTreeBranch::Root[0]");
 	do{
 		cmd("$SYMMETRY_NONE");/*No Symmetry*/
 	}while(SelectNextVolume(false));
 }
-

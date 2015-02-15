@@ -1,0 +1,9 @@
+void main(){
+	InstallToMenu("Edit","yzk_presetSplit");
+	cmd("$[Page4]Split");
+	SetBoolField("$ThroughAllVolumes",false);
+	SetSliderValue("$SplitBorderWidth",0.0);
+	if(IsSurface() == true)
+ 		SetCurVolumeMode(false,false);
+	Step(1);
+}

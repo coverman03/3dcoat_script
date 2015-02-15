@@ -1,0 +1,10 @@
+void main(){
+	InstallToMenu("Retopo","yzk_selectRetopoLayer");
+	yzk_selectRetopoLayer();
+}
+
+void yzk_selectRetopoLayer(){
+	string curVolume = GetCurVolume();
+	SelectRetopoLayer(curVolume);
+	Step(1);
+}

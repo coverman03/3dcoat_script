@@ -1,0 +1,8 @@
+void main(){
+	InstallToMenu("Edit","yzk_presetCutOff");
+	cmd("$[Page4]CutOff");
+	SetBoolField("$ThroughAllVolumes",false);
+	if(IsSurface() == true)
+		SetCurVolumeMode(false,false);
+	Step(1);
+}

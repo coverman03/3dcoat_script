@@ -1,5 +1,7 @@
 void main(){
+	InstallToMenu("Edit","yzk_presetDuplicate");
 	string VoxName = GetCurVolume();
 	cmd("$CloneVoxTree");/*Clone*/
 	RenameCurVolume(VoxName);
+	Step(1);
 }

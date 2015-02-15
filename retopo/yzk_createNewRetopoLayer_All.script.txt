@@ -1,0 +1,19 @@
+void main(){
+	InstallToMenu("Retopo","yzk_createNewRetopoLayer");
+	string curVolume = GetCurVolume();
+	SelectFirstVolume(false);
+	do{
+		createNewLayer();
+	}while(SelectNextVolume(false));
+	SetCurVolume(curVolume);
+}
+
+void createNewLayer(){
+	string curVolume = GetCurVolume();
+	SelectRetopoLayer(curVolume);
+	string curRetopo = GetCurrentRetopoLayerName();
+	Step(1);
+	if(curRetopo != curVolume)
+		AddRetopoLayer(curVolume);
+	Step(1);
+}

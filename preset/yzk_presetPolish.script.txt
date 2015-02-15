@@ -1,0 +1,15 @@
+void main(){
+	InstallToMenu("Edit","yzk_presetPolish");
+	SetCurVolumeMode(true,false);
+	Step(1);
+	cmd("$Rapid2");
+	cmd("$PENOP0");
+	SetBoolField("$RemoveStretching",true);
+	SetSliderValue("$NrmSampling",0.45);
+	SetBoolField("$INVACTION",false);
+	SetBoolField("$Buildup",true);
+	SetSliderValue("$FALLOFF",1.0);
+	SetSliderValue("$PEN_DEPTH",0.05);
+	SetSliderValue("$SMOOTH_DEG",0.2);
+	Step(1);
+}

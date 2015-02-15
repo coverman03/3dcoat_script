@@ -1,0 +1,10 @@
+void main(){
+	InstallToMenu("Retopo","yzk_renameRetopoLayer");
+	yzk_renameRetopoLayer();
+}
+
+void yzk_renameRetopoLayer(){
+	string curVolume = GetCurVolume();
+	RenameCurrentRetopoLayer(curVolume);
+	Step(1);
+}

@@ -1,0 +1,14 @@
+void main(){
+	InstallToMenu("Edit","yzk_presetPick");
+	cmd("$Pick_layer");
+	//cmd("$[Page4]Pick");
+	cmd("$[Page4]Transform");
+	Step(1);
+	yzk_selectRetopoLayer();	
+}
+
+void yzk_selectRetopoLayer(){
+	string curVolume = GetCurVolume();
+	SelectRetopoLayer(curVolume);
+	Step(1);
+}

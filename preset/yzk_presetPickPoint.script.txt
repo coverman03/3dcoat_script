@@ -1,0 +1,7 @@
+void main(){
+ 	cmd("$[Page4]Plane");
+ 	//cmd("$PickPtParams2::$Point.x4");
+ 	string test= $PickPtParams2::$Point.x4;
+ 	ShowFloatingMessage(test, 3);
+	Step(1);
+}

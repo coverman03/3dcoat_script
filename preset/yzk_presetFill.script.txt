@@ -1,0 +1,7 @@
+void main(){
+	InstallToMenu("Edit","yzk_presetFill");
+	cmd("$[Page4]Fill");
+	SetSliderValue("$PEN_DEPTH",2.0);
+	SetBoolField("$ThroughAllVolumes",false);
+	Step(1);
+}

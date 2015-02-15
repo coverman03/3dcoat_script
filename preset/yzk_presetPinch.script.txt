@@ -1,0 +1,13 @@
+void main(){
+	InstallToMenu("Edit","yzk_presetPinch");
+	SetCurVolumeMode(true,false);
+	Step(1);
+	cmd("$[Page4]Pinch");
+	SetBoolField("$RemoveStretching",true);
+	SetBoolField("$INVACTION",false);
+	SetSliderValue("$PinchPower",1.0);
+	SetSliderValue("$FALLOFF",1.0);
+	SetSliderValue("$PEN_DEPTH",0.5);
+	SetSliderValue("$SMOOTH_DEG",1.0);
+	Step(1);
+}

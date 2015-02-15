@@ -1,0 +1,14 @@
+void main(){
+	InstallToMenu("Edit","yzk_presetMove");
+	cmd("$[Page4]Move");
+	SetBoolField("$UpdateRetopo",false);
+	SetBoolField("$ThroughAllVolumes",false);
+	SetSliderValue("$MoveDegree",1.0);
+	SetSliderValue("$SplitBorderWidth",0.01);
+	SetSliderValue("$FALLOFF",0.5);
+	SetSliderValue("$SMOOTH_DEG",1.0);
+	bool curVolumeMode = IsSurface();
+	if(curVolumeMode == true)
+		SetBoolField("$RemoveStretching",false);
+	Step(1);
+}

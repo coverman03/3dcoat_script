@@ -1,0 +1,6 @@
+void main(){
+	SetSliderValue("$PEN_RADIUS",10.00);/*Pen RadiusÅ@10*/
+	SetBoolField("$SymmetryParams::EnableSymmetry",true);/*Enable Symmetry*/
+	SetBoolField("$SymmetryParams::SymmX",true);/*X - Axis*/
+	SetBoolField("$VIEW_ORTHO",true);/*Orthographic Projection*/
+}

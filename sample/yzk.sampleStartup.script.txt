@@ -1,6 +1,9 @@
 void main(){
-	SetSliderValue("$PEN_RADIUS",10.00);/*Pen RadiusÅ@10*/
+	SetBoolField("$LOCK_SCREEN_RADIUS",true);
+	cmd("$SYMMETRY");/*Symmetry*/
+	Step(1);
 	SetBoolField("$SymmetryParams::EnableSymmetry",true);/*Enable Symmetry*/
 	SetBoolField("$SymmetryParams::SymmX",true);/*X - Axis*/
 	SetBoolField("$VIEW_ORTHO",true);/*Orthographic Projection*/
+	Step(1);
 }

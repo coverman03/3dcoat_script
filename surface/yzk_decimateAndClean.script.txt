@@ -1,0 +1,12 @@
+void main(){
+	InstallToMenu("Geometry","decimate+clean");
+	SetModalDialogCallback("PressOK");
+	cmd("$Decimate");/*Decimate*/
+	cmd("$CleanSurface");/*Clean Surface*/
+	ShowFloatingMessage("decimate&clean is completed", 0);
+	Step(1);
+}
+
+void PressOK(){
+	cmd("$DialogButton#1");
+}

@@ -1,5 +1,5 @@
 void main(){
-	InstallToMenu("Geometry","decimate+clean");
+	InstallToMenu("Edit","decimate+clean");
 	SetModalDialogCallback("PressOK");
 	cmd("$Decimate");/*Decimate*/
 	cmd("$CleanSurface");/*Clean Surface*/

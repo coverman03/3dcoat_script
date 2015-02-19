@@ -1,5 +1,5 @@
 void main(){
-	InstallToMenu("Retopo","yzk_createNewRetopoLayer");
+	InstallToMenu("Retopo","yzk_createNewRetopoLayerAll");
 	string curVolume = GetCurVolume();
 	SelectFirstVolume(false);
 	do{

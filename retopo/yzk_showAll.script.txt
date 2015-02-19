@@ -1,0 +1,8 @@
+void main(){
+	InstallToMenu("Retopo","yzk_retopo_showAll");
+	cmd("$ShowAll");
+	cmd("$[Page2]Select");
+	cmd("$[Page2]Unhide");
+	cmd("$CLEARSEL");
+	cmd("$TweakFaces");
+}

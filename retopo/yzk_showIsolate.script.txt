@@ -1,0 +1,32 @@
+void main(){
+	string curVolume = GetCurVolume();
+	InstallToMenu("Retopo","yzk_retopo_showIsolate");
+	selectRetopoLayer();
+	IsolateRetopo();
+	//IsolateVoxel(curVolume);
+}
+
+void selectRetopoLayer(){
+	string curVolume = GetCurVolume();
+	SelectRetopoLayer(curVolume);
+	Step(1);
+}
+
+void IsolateRetopo(){
+	cmd("$[Page2]Select");
+	cmd("$[Page2]Unhide");
+	cmd("$CLEARSEL");
+	cmd("$TweakFaces");
+	cmd("$RtpGroupBtn4");
+	cmd("$[Page2]Hide");
+	cmd("$[Page2]Invert Hidden");
+}
+
+void IsolateVoxel(string curVolume){
+	ToRoom("Voxels");
+	cmd("$ShowAll");
+	SetCurVolume(curVolume);
+	cmd("$HideButCurrent");/*Isolate*/
+	ShowFloatingMessage(curVolume, 3);
+	ToRoom("Retopo");
+}

@@ -1,0 +1,4 @@
+void main(){
+	InstallToMenu("Windows","inst_windows");
+}
+

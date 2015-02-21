@@ -1,0 +1,4 @@
+void main(){
+	InstallToMenu("Bake","inst_bake");
+}
+

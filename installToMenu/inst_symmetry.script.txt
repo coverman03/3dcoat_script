@@ -1,0 +1,4 @@
+void main(){
+	InstallToMenu("Symmetry","inst_symmetry");
+}
+

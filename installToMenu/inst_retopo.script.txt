@@ -1,0 +1,4 @@
+void main(){
+	InstallToMenu("Retopo","inst_retpo");
+}
+

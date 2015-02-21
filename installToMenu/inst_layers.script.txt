@@ -1,0 +1,4 @@
+void main(){
+	InstallToMenu("Layers","inst_layers");
+}
+

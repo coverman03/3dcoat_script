@@ -1,0 +1,4 @@
+void main(){
+	InstallToMenu("View","inst_view");
+}
+

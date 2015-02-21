@@ -1,0 +1,4 @@
+void main(){
+	InstallToMenu("Freeze","inst_freeze");
+}
+

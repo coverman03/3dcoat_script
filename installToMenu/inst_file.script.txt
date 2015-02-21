@@ -1,0 +1,4 @@
+void main(){
+	InstallToMenu("File","inst_file");
+}
+

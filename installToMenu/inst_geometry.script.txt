@@ -1,0 +1,4 @@
+void main(){
+	InstallToMenu("Voxels","inst_geo");
+}
+
